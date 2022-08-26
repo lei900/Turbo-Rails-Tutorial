@@ -1,5 +1,8 @@
 # README
 
+* A sample app for Turbo Rails Tutorial  
+  source: [Turbo Rails Tutorila](https://www.hotrails.dev/turbo-rails/)
+  
 * Ruby version: 3.1.0
 
 * Rails version: 7.0.3.1
