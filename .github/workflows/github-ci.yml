@@ -15,7 +15,7 @@ on:
     types: [opened, reopened]
   merge_group:
     types: [checks_requested]
-  workflow_dispatch
+  workflow_dispatch:
   
 jobs:
   test:
