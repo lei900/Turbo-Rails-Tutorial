@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 #
 # Uncomment this and change the path if necessary to include your own
 # components.
@@ -13,7 +14,7 @@ SimpleForm.setup do |config|
   # wrapper, change the order or even add your own to the
   # stack. The options given below are used to wrap the
   # whole input.
-  config.wrappers :default, class: "form__group" do |b|
+  config.wrappers :default, class: 'form__group' do |b|
     ## Extensions enabled by default
     # Any of these extensions can be disabled for a
     # given input by passing: `f.input EXTENSION_NAME => false`.
@@ -52,8 +53,8 @@ SimpleForm.setup do |config|
 
     ## Inputs
     # b.use :input, class: 'input', error_class: 'is-invalid', valid_class: 'is-valid'
-    b.use :label, class: "visually-hidden"
-    b.use :input, class: "form__input", error_class: "form__input--invalid"
+    b.use :label, class: 'visually-hidden'
+    b.use :input, class: 'form__input', error_class: 'form__input--invalid'
     b.use :hint,  wrap_with: { tag: :span, class: :hint }
     b.use :error, wrap_with: { tag: :span, class: :error }
 
@@ -107,7 +108,7 @@ SimpleForm.setup do |config|
   # config.item_wrapper_class = nil
 
   # How the label text should be generated altogether with the required text.
-  config.label_text = lambda { |label, _, _| label }
+  config.label_text = ->(label, _, _) { label }
 
   # You can define the class to use on all labels. Default is nil.
   # config.label_class = nil
@@ -160,10 +161,10 @@ SimpleForm.setup do |config|
   # Default class for inputs
   # config.input_class = nil
 
-  config.browser_validations  = false
+  config.browser_validations = false
 
   # Define the default class of the input wrapper of the boolean input.
-  config.boolean_label_class= "form__checkbox-label"
+  config.boolean_label_class = 'form__checkbox-label'
 
   # Defines if the default input wrapper class should be included in radio
   # collection wrappers.
